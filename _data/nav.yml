@@ -12,6 +12,9 @@
 - name: About
   path: about.html
   section_id: about
+- name: Proyectos
+  path: proyectos.html
+  section_id: proyectos
 - name: Portfolio
   path: portfolio.html
   section_id: portfolio
