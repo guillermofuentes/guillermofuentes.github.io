@@ -2,72 +2,37 @@
 layout: default
 title: AvanTC Estudio de Ingenieros
 section_id: home
-services:
-  -
-    - title: Digital Transformation
-      icon: layout
-      desc:
-        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
-      color:
-    - title: Agile Enablement
-      icon: layout
-      desc:
-        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
-      color:
-    - title: Continuous Integration
-      icon: layout
-      desc:
-        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
-      color:
-  -
-    - title: Continuous Delivery
-      icon: layout
-      desc:
-        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
-      color: yellow
-    - title: Business Transformation
-      icon: layout
-      desc:
-        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
-      color: yellow
-    - title: Cultural Alignment
-      icon: layout
-      desc:
-        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
-      color: yellow
+
 
 milestones:
   - from: 0
-    to: 69
-    title: Projects completed
+    to: 10
+    title: Apps Móviles
   - from: 0
-    to: 726
-    title: Cups of coffee offered
+    to: 65000
+    title: Usuarios
   - from: 0
-    to: 59
-    title: Happy clients
-  - from: 0
-    to: 121
-    title: Articles published
+    to: 5000
+    title: Miles de Transacciones
 
 works:
   - image: work-1.jpg
     title: Beautiful Girl
-    category: Design &amp; Development
+    category: Development
   - image: work-2.jpg
     title: Look at me
-    category: Design &amp; Development
+    category: Development
   - image: work-3.jpg
     title: Am I cute
-    category: Design &amp; Development
+    category: Development
   - image: work-4.jpg
     title: Umbrella
-    category: Design &amp; Development
+    category: Development
 ---
 
 {% include slider.html %}
 
-{% include whys.html shape="circle" %}
+{% include whys.html shape="boxed" %}
 
 
 <!-- Who we are -->
@@ -97,34 +62,62 @@ works:
   </div>
 </div>
 
-
-
-<!-- Long-lasting Software -->
-
-<div class='full white'>
-  <div class='row'>
-    <div class='large-6 columns'>
-      <img class='fadeinleft' src='{{site.url}}/images/ipad-air.png'>
-    </div>
-    <div class='large-6 columns'>
-      <h2 class='blue-text-2'>Agile y Lean</h2>
-      <p>
-        En AvanTIC creemos que el software, además de ser de calidad, ha de ser creado 
-        para perdurar. El software no tiene 
-        que ser algo que simplemente ofrezca una solución a un problema, algo que 
-        funcione. El software tiene que funcionar bien, durar, poder crecer y 
-        cumplir a largo plazo, no sólo ahora sino de forma continuada en el tiempo.
-        <br>
-        Nuestras aplicaciones corporativas están construidas de tal manera que 
-        perdurarán y brillarán en el tiempo, especialmente en 
-        sectores altamente demandantes de estabilidad y robustez como 
-        los sistemas críticos de negocio, la administración electrónica 
-        o la gestión pública.
-      </p>
-      <a class='button boxed'>Sepa más</a>
+<!-- APPS MOVILES -->
+<div class='full white centered-text'>
+    <div class='row'>
+      <div class='large-12 columns'>
+        <h2>Aplicaciones Móviles Empresariales</h2>
+        <p>Porque las aplicaciones móviles para uso empresarial tienen 
+          requisitos muy exigentes, diseñamos desde la app móvil hasta 
+          los servidores en alta disponibilidad y una API segura.</p>
+        <img class='centered' src='{{site.url}}/images/apps-show.png'>
+      </div>
     </div>
   </div>
-</div>
+  
+  <!-- MILESTONES -->
+  <div class='full bg-4 no-padding'>
+    <div class='two spacing'></div>
+    <div class='row'>
+      {% for milestone in page.milestones %}
+        <div class='medium-4 large-4 columns'>
+          <div class='milestone light'>
+            <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'></strong>
+            <span>{{milestone.title}}</span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class='two spacing'></div>
+  </div>
+  
+<!-- Agile y Lean -->
+
+<div class='full white'>
+    <div class='row'>
+      <div class='large-6 columns'>
+        <img class='fadeinleft' src='{{site.url}}/images/patrick-perkins-350622-unsplash.jpg'>
+      </div>
+      <div class='large-6 columns'>
+        <h2 class='blue-text-2'>Agile y Lean</h2>
+        <p>
+          En AvanTIC creemos que el software, además de ser de calidad, ha de ser creado 
+          para perdurar. El software no tiene 
+          que ser algo que simplemente ofrezca una solución a un problema, algo que 
+          funcione. El software tiene que funcionar bien, durar, poder crecer y 
+          cumplir a largo plazo, no sólo ahora sino de forma continuada en el tiempo.
+          <br>
+          Nuestras aplicaciones corporativas están construidas de tal manera que 
+          perdurarán y brillarán en el tiempo, especialmente en 
+          sectores altamente demandantes de estabilidad y robustez como 
+          los sistemas críticos de negocio, la administración electrónica 
+          o la gestión pública.
+        </p>
+        <a class='button boxed-dark'>Sepa más</a>
+      </div>
+    </div>
+  </div>
+  
 
 
 <!-- Who we are -->
@@ -132,173 +125,106 @@ works:
 <div class='full'>
   <div class='row'>
     <div class='large-6 columns'>
-      <h2 class=''>Desarrollo Ágil y Lean</h2>
+      <h2 class=''>Expertos en Java de Servidor</h2>
       <p>
-        En AvanTIC creemos que el software, además de ser de calidad, ha de ser creado 
-        para perdurar. El software no tiene 
-        que ser algo que simplemente ofrezca una solución a un problema, algo que 
-        funcione. El software tiene que funcionar bien, durar, poder crecer y 
-        cumplir a largo plazo, no sólo ahora sino de forma continuada en el tiempo.
-        <br>
-        Nuestras aplicaciones corporativas están construidas de tal manera que 
-        perdurarán y brillarán en el tiempo, especialmente en 
-        sectores altamente demandantes de estabilidad y robustez como 
-        los sistemas críticos de negocio, la administración electrónica 
-        o la gestión pública.
+        En AvanTIC somos expertos en tecnologías Web Java Server Side. Desarrollamos
+        aplicaciones corportativas y para administración pública, en el
+        ámbito tributario, jurídico y de la tramitación electrónica.
       </p>
-      <a class='button boxed'>Sepa más</a>
+      <a class='button boxed-dark'>Sepa más</a>
     </div>
     <div class='large-6 columns'>
-      <img class='fadeinright' src='{{site.url}}/images/facial-expression-furnitures-indoors-1595387.jpg'>
+      <img class='fadeinright' src='{{site.url}}/images/mike-kenneally-80402-unsplash.jpg'>
     </div>
   </div>
 </div>
 
-<!-- Aproximación -->
+<!-- Consultoría Jurídica -->
 
 <div class='full white'>
-  <div class='row'>
-    <div class='special-title centered-text'>
-      <h2>Nuestra Aproximación</h2>
-      <p>Create a nimble and responsive organization by combining years 
-        of strategic transformation knowledge 
-        with lean product innovation to create a digital excellence experience.</p>
+    <div class='row'>
+      <div class='large-6 columns'>
+        <img class='fadeinleft' src='{{site.url}}/images/architecture-blur-building-728486.jpg'>
+      </div>
+      <div class='large-6 columns'>
+        <h2 class='blue-text-2'>Consultoría Jurídica</h2>
+        <p>
+          En AvanTIC creemos que el software, además de ser de calidad, ha de ser creado 
+          para perdurar. El software no tiene 
+          que ser algo que simplemente ofrezca una solución a un problema, algo que 
+          funcione. El software tiene que funcionar bien, durar, poder crecer y 
+          cumplir a largo plazo, no sólo ahora sino de forma continuada en el tiempo.
+          <br>
+          Nuestras aplicaciones corporativas están construidas de tal manera que 
+          perdurarán y brillarán en el tiempo, especialmente en 
+          sectores altamente demandantes de estabilidad y robustez como 
+          los sistemas críticos de negocio, la administración electrónica 
+          o la gestión pública.
+        </p>
+        <a class='button boxed-dark'>Sepa más</a>
+      </div>
     </div>
   </div>
-    {% for row in page.services %}
-    <div class="row">
-      {% for service in row %}
-        <div class='medium-4 large-4 columns icon-text'>
-          <i class='icon-{{service.icon}} {{service.color}}'></i>
-          <h3>{{service.title}}</h3>
-          <p>{{service.desc}}</p>
+  
+  <!-- Separador -->
+  <div class='full yellow no-padding'>
+    <div class='two spacing'></div>
+    <div class='row'>
+      <div class='call-to-action light'>
+        <div class='medium-9 large-9 columns'>
+          <p class='left'>Conozca mejor lo que podemos hacer por usted y su organización</p>
         </div>
-      {% endfor %}
-    </div>
-    {% unless forloop.last %}
-      <div class="spacing"></div>
-    {% endunless %}
-  {% endfor %}
-</div>
-
-<div class='full bg-4 no-padding'>
-  <div class='two spacing'></div>
-  <div class='row'>
-    {% for milestone in page.milestones %}
-      <div class='medium-3 large-3 columns'>
-        <div class='milestone light'>
-          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'></strong>
-          <span>{{milestone.title}}</span>
+        <div class='medium-3 large-3 columns'>
+          <a class='button white' href='#'>Ir a Servicios</a>
         </div>
       </div>
-    {% endfor %}
-  </div>
-  <div class='two spacing'></div>
-</div>
-
-<div class='full white centered-text no-padding'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      <div class='three spacing'></div>
-      <h2>Aplicaciones Móviles Empresariales</h2>
-      <img class='centered' src='{{site.url}}/images/apps-show.png'>
-    </div>
-  </div>
-</div>
-
-<!-- Separador -->
-<div class='full yellow no-padding'>
-  <div class='two spacing'></div>
-  <div class='row'>
-    <div class='call-to-action light'>
-      <div class='medium-9 large-9 columns'>
-        <p class='left'>Consulte nuestras últimas entradas en el Blog</p>
-      </div>
-      <div class='medium-3 large-3 columns'>
-        <a class='button white' href='#'>Ir al blog</a>
-      </div>
-    </div>
-  </div>
-  <div class='spacing'></div>
-</div>
-
-<!-- Separador -->
-<div class='full no-padding' style="background-color: #3cbace;">
-  <div class='two spacing'></div>
-  <div class='row'>
-    <div class='call-to-action light'>
-      <div class='medium-9 large-9 columns'>
-        <p class='left'>Otro Azul: #3cbace</p>
-      </div>
-      <div class='medium-3 large-3 columns'>
-        <a class='button white' href='#'>Purchase Now</a>
-      </div>
-    </div>
-  </div>
-  <div class='spacing'></div>
-</div>
-
-
-<div class='full bg-5'>
-  <div class='spacing'></div>
-  <div class='row'>
-    <div class='large-6 columns'>
-      <h2 class='light'>Very easy to use</h2>
-      <p class='light'>
-        Quibusdam ea excepturi repudiandae. voluptates voluptatem quam quod quaerat sed in praesentium sint. ipsum accusamus provident debitis cupiditate labore at voluptate qui ab dolore corporis itaque et ea.
-      </p>
-      <a class='button boxed' href='#'>Know more</a>
-    </div>
-    <div class='large-6 columns'>
-      <img class='fadeinright' src='{{site.url}}/images/settings.jpg'>
-    </div>
-  </div>
-  <div class='spacing'></div>
-</div>
-
-<div class='full white centered-text'>
-  <div class='three spacing'></div>
-  <div class='row'>
-    <div class='special-title centered-text'>
-      <h2>Nuestros Valores</h2>
-      <p>Lo que nos mueve y nos define</p>
     </div>
     <div class='spacing'></div>
-    <div class="large-4 columns">
-      <div class="principle">
-        <i class="icon-basic-heart"></i>
-        <h4>Entregamos Valor</h4>
-        <p>Apliamos una filosofía <i>ágil</i> y <i>lean</i> para entregar valor de forma continuada a nuestros clientes evitando el desperdicio.</p>
+  </div>
+
+  <div class='full white centered-text'>
+    <div class='row'>
+      <div class='special-title centered-text'>
+        <h2>Valores</h2>
+        <p>Lo que nos mueve y nos define</p>
       </div>
-    </div>
-    <div class="large-4 columns">
-      <div class="principle">
-        <i class="icon-basic-heart"></i>
-        <h4>Nos Implicamos</h4>
-        <p>Nos encanta la sensación de lograr los objetivos del cliente y la satisfacción del trabajo bien hecho.</p>
+      <div class='spacing'></div>
+      <div class="large-4 columns">
+        <div class="principle">
+          <i class="icon-basic-heart"></i>
+          <h4>Entregamos Valor</h4>
+          <p>Apliamos una filosofía <i>ágil</i> y <i>lean</i> para entregar valor de forma continuada a nuestros clientes evitando el desperdicio.</p>
+        </div>
       </div>
-    </div>  
-    <div class="large-4 columns">
-      <div class="principle">
-        <i class="icon-basic-heart"></i>
-        <h4>Aprendemos para Innovar</h4>
-        <p>La experiencia no es suficiente: sólo la formación continuada nos permiten alcanzar objetivos excepcionales.</p>
+      <div class="large-4 columns">
+        <div class="principle">
+          <i class="icon-basic-heart"></i>
+          <h4>Nos Implicamos</h4>
+          <p>Nos encanta la sensación de lograr los objetivos del cliente y la satisfacción del trabajo bien hecho.</p>
+        </div>
+      </div>  
+      <div class="large-4 columns">
+        <div class="principle">
+          <i class="icon-basic-heart"></i>
+          <h4>Aprendemos para Innovar</h4>
+          <p>La experiencia no es suficiente: sólo la formación continuada nos permiten alcanzar objetivos excepcionales.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
 
 <div class='full no-padding'>
-  <div class='three spacing'></div>
-  <div class='row'>
-    <div class='special-title centered-text'>
-      <h2>Projectos Destacados</h2>
-      <p>Algunos de nuestros principales proyectos</p>
+    <div class='three spacing'></div>
+    <div class='row'>
+      <div class='special-title centered-text'>
+        <h2>Projectos Destacados</h2>
+        <p>Algunos de nuestros principales proyectos</p>
+      </div>
     </div>
-  </div>
-  <div class='spacing'></div>
+    <div class='spacing'></div>
 </div>
-
+  
 <ul class='gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4'>
   {% for work in page.works %}
     <li>
@@ -314,9 +240,11 @@ works:
     </li>
   {% endfor %}
 </ul>
-
+  
 {% include clients.html %}
 
 {% include testimonials.html bg="bg-1" %}
 
-{% include get-in-touch.html %}
+
+  
+  

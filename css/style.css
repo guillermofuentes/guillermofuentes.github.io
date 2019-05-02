@@ -38,7 +38,7 @@ h1, h2, h3, h4 {
   color: #31bffc;
 }
 
-.blue-text-2 {
+.blue-text-2, a.blue-text-2 {
   color: #0095B2;
 }
 .red-text {
@@ -101,6 +101,10 @@ h1, h2, h3, h4 {
   background: none;
   color: white;
 }
+.button.boxed-dark {
+  border: 1px solid;
+  background: none;
+}
 .button.boxed:hover {
   background: #fcbf31;
 }
@@ -134,13 +138,13 @@ h1, h2, h3, h4 {
 
 .bg-4 {
   background: url(../images/bg-4.jpg) center center no-repeat;
-  background: url(../images/bg-4.jpg) center center no-repeat;
+  background: url(../images/robin-worrall-749755-unsplash.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .bg-5 {
   background: url(../images/bg-5.jpg) center center no-repeat;
-  background: url(../images/bg-5.jpg) center center no-repeat;
+  background: url(../images/ryan-franco-116991-unsplash-bg.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -223,6 +227,16 @@ h1, h2, h3, h4 {
   -moz-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
+
+  /* ESTILOS AVANTIC
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin: auto auto 35px;
+  width: 75%;
+  color: #d33;
+  border: 8px solid #aaa;
+  */
 }
 
 .icon-text-boxed:hover i {

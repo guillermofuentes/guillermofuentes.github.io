@@ -5,21 +5,6 @@
     <p>Porque la transformación digital es un camino que no debe recorrer sólo.</p>
     <div class='two spacing'></div>
     <a class='button boxed'>Purchase Now</a>
-- image: ashley-knedler-75600-unsplash.jpg #slide-2.jpg
-  desc_location: right
-  desc:
-    <h2>Su socio tecnológico</h2>
-    <p>Le acompañamos para transformar su organización.</p>
-    <div class='two spacing'></div>
-    <a class='button boxed'>View Features</a>
-- image: all-bong-101861-unsplash.jpg #slide-1.jpg
-  desc_location: right
-  desc:
-    <h2>Long-Lasting Sofware</h2>
-    <p class="">Desarrollamos software que perdurará y brillará 
-    en el tiempo de forma continuada</p>
-    <div class='two spacing'></div>
-    <a class='button boxed'>Learn More</a>
 - image: adult-blur-business-2102416.jpg
   desc_location: right
   desc:
@@ -35,3 +20,18 @@
     Contratación Pública y e-Administración</p>
     <div class='two spacing'></div>
     <a class='button boxed'>Learn More</a>
+- image: all-bong-101861-unsplash.jpg #slide-1.jpg
+  desc_location: right
+  desc:
+    <h2>Long-Lasting Sofware</h2>
+    <p class="">Desarrollamos software que perdurará y brillará 
+    en el tiempo de forma continuada</p>
+    <div class='two spacing'></div>
+    <a class='button boxed'>Learn More</a>
+- image: ashley-knedler-75600-unsplash.jpg #slide-2.jpg
+  desc_location: right
+  desc:
+    <h2>AvanTIC es su socio tecnológico</h2>
+    <p>Le acompañamos para transformar su organización.</p>
+    <div class='two spacing'></div>
+    <a class='button boxed'>View Features</a>
