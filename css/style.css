@@ -34,6 +34,17 @@ h1, h2, h3, h4 {
   background: #31bffc;
 }
 
+.blue-text {
+  color: #31bffc;
+}
+
+.blue-text-2 {
+  color: #0095B2;
+}
+.red-text {
+  color: rgb(162, 30, 30);
+}
+
 .dark-blue {
   background: #3d5766;
 }

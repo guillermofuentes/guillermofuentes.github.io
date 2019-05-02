@@ -1,35 +1,37 @@
-- image: slide-1.jpg
-  desc_location: left
+- image: brent-cox-197585-unsplash.jpg
+  desc_location: center
   desc:
-    <h2>This is AvanTIC</h2>
-    <p>A creative responsive theme.</p>
+    <h2>¿Desea transformar su organización?</h2>
+    <p>Porque la transformación digital es un camino que no debe recorrer sólo.</p>
+    <div class='two spacing'></div>
+    <a class='button boxed'>Purchase Now</a>
+- image: ashley-knedler-75600-unsplash.jpg #slide-2.jpg
+  desc_location: right
+  desc:
+    <h2>Su socio tecnológico</h2>
+    <p>Le acompañamos para transformar su organización.</p>
     <div class='two spacing'></div>
     <a class='button boxed'>View Features</a>
-- image: ilya-pavlov-87438-unsplash.jpg #slide-2.jpg
+- image: all-bong-101861-unsplash.jpg #slide-1.jpg
   desc_location: right
   desc:
     <h2>Long-Lasting Sofware</h2>
-    <p>Focus on every detail element.</p>
+    <p class="">Desarrollamos software que perdurará y brillará 
+    en el tiempo de forma continuada</p>
     <div class='two spacing'></div>
     <a class='button boxed'>Learn More</a>
-- image: slide-3.jpg
-  desc_location: left
-  desc:
-    <h2>Responsive Design</h2>
-    <p>Let users access the theme with all devices</p>
-    <div class='two spacing'></div>
-    <a class='button boxed'>Learn More</a>
-- image: slide-4.jpg
+- image: adult-blur-business-2102416.jpg
   desc_location: right
   desc:
-    <h2>Very Easy to Use</h2>
-    <p>Almost every element could be customized</p>
+    <h2>Desarrollo a Medida</h2>
+    <p>No se conforme con las soluciones comunes</p>
     <div class='two spacing'></div>
     <a class='button boxed'>Learn More</a>
-- image: slide-5.jpg
-  desc_location: center
+- image: eugene-chystiakov-1381895-unsplash.jpg #slide-1.jpg
+  desc_location: right
   desc:
-    <h2>A Beautiful &amp; Creative Theme</h2>
-    <p>Every element is designed attentively</p>
+    <h2>Consultoría Jurídica</h2>
+    <p class="red-text">Consultoría Jurídica especializada en TIC,
+    Contratación Pública y e-Administración</p>
     <div class='two spacing'></div>
-    <a class='button boxed'>Purchase Now</a>
+    <a class='button boxed'>Learn More</a>
