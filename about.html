@@ -3,18 +3,18 @@ layout: default
 title: About
 section_id: about
 bars:
-  - title: Web design
-    percent: 84
-  - title: Web development
-    percent: 95
-  - title: Site management
+  - title: Desarrollo Móvil
     percent: 70
-  - title: Branding
-    percent: 61
+  - title: Desarrollo Java de Servidor
+    percent: 95
+  - title: APIs e Integración
+    percent: 60
+  - title: Consultoría Jurídica
+    percent: 20
 members:
   - image: member-1.png
-    name: Shirley Adkins
-    position: Founder &amp; Designer
+    name: Víctor Durán
+    position: Socio Fundador &amp; Director de Operaciones (COO)
     desc:
       Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
     socials:
@@ -31,8 +31,8 @@ members:
         link: #
         color: yellow
   - image: member-2.png
-    name: Uriel Garrett
-    position: Director &amp; Project Manager
+    name: Guillermo Fuentes
+    position: Socio Fundador &amp; Director de Tecnología (CTO)
     desc:
       Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
     socials:
@@ -43,8 +43,8 @@ members:
         link: #
         color: yellow
   - image: member-3.png
-    name: Dulce Welch
-    position: Designer &amp; Art Director
+    name: M. Eugenia Alcalde
+    position: Socia Fundadora &amp; Directora Jurídica
     desc:
       Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
     socials:
@@ -78,8 +78,8 @@ members:
   <div class='row'>
     <div class='special-title centered-text'>
       <i class='icon-users'></i>
-      <h2>Who we are</h2>
-      <p>We are happy to know you are happy</p>
+      <h2>Somos AvanTIC</h2>
+      <p>Pasión por la excelencia</p>
       <p class='shortline'></p>
     </div>
     <div class='spacing'></div>
@@ -88,10 +88,13 @@ members:
   <div class='row'>
     <div class='medium-6 large-6 columns'>
       <p>
-        <span class='drop-letters'>We</span>
-        are est unde inventore sed amet est in voluptas cum ipsa ut sunt minus. Nihil quia et omnis blanditiis eius suscipit quos repudiandae. Nihil quia et omnis blanditiis eius suscipit quos. Est unde inventore sed amet est in voluptas cum ipsa ut sunt minus. Nihil quia et omnis blanditiis eius suscipit quos repudiandae.
+        <span class='drop-letters'>S</span>
+        somos una empresa de personas que comparten la <strong>pasión por aprender y construir</strong>, persiguiendo siempre la excelencia en todo lo que hacemos.
       </p>
-      <p>Est unde inventore sed amet est in voluptas cum ipsa ut sunt minus. Nihil quia et omnis blanditiis eius suscipit quos repudiandae. Nihil quia et omnis blanditiis eius suscipit quos. Nihil quia et omnis blanditiis eius suscipit quos.</p>
+      <p>Con un extraordinario equipo profesional, siempre en crecimiento, abordamos los proyectos más complejos y desafiantes con total garantía.
+        </p><p>
+        Compartimos una cultura y una visión de cómo hacer las cosas, dejado espacio para la <strong>diversidad</strong> y la <strong>creatividad</strong>.
+        </p>
     </div>
     <div class='medium-6 large-6 columns'>
       <ul class='bars'>
@@ -107,8 +110,10 @@ members:
       </ul>
     </div>
   </div>
+
 </div>
 
+{% include valores.html %}
 
 
 <div class='members'>
@@ -134,45 +139,36 @@ members:
                   <i class='icon-{{social.name}} {{social.color}}'></i>
                 </a>
               {% endfor %}
+              <div class='three spacing'></div>
             </div>
           </div>
         </div>
       {% endfor %}
     </div>
 
-    <div class='three spacing'></div>
 
-    <div class='row'>
-      {% for member in page.members %}
-        {% if forloop.first %}
-          {% assign active_class = "active" %}
-        {% else %}
-          {% assign active_class = "" %}
-        {% endif %}
-        <div class='medium-3 large-3 columns'>
-          <div class='member centered-text {{active_class}}'>
-            <img src='{{site.url}}/images/{{member.image}}'>
-            <h3>{{member.name}}</h3>
-            <p class='position'>{{member.position}}</p>
-            <p>
-              {{member.desc}}
-            </p>
-            <div class='socials'>
-              {% for social in member.socials %}
-                <a href='{{social.link}}'>
-                  <i class='icon-{{social.name}} {{social.color}}'></i>
-                </a>
-              {% endfor %}
+    {% include el-equipo.html%}
+
+
+    <div class='special-title centered-text'>
+        <div class='spacing'></div>
+        <i class='icon-compass'></i>
+        <h2>Encuéntranos</h2>
+        <p class='shortline'></p>
+        <div class='spacing'></div>
+
+        <div class='centered-text'>
+                <div class='row'>
+            <iframe width="640" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;hl=es&amp;geocode=&amp;q=Avantic&amp;sll=28.463243,-16.29528&amp;sspn=0.008979,0.016522&amp;ie=UTF8&amp;t=h&amp;source=embed&amp;hq=Avantic&amp;hnear=&amp;vpsrc=6&amp;cid=15160809766213611405&amp;ll=28.467861,-16.293797&amp;spn=0.013204,0.027466&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
             </div>
-          </div>
         </div>
-      {% endfor %}
     </div>
 
-    <div class='three spacing'></div>
-    <div class='three spacing'></div>
+  <div class='three spacing'></div>
+  <div class='three spacing'></div>
   </div>
 </div>
+
 
 <h2>Créditos</h2>
 
