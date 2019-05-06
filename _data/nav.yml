@@ -1,20 +1,12 @@
-- name: Home
+- name: Inicio
   path: index.html
   section_id: home
-  children:
-    - name: Home default
-      path: index.html
-    - name: Home alternative
-      path: index-alternative.html
-- name: Services
+- name: Servicios
   path: services.html
   section_id: services
-- name: About
+- name: Acerca de...
   path: about.html
   section_id: about
-- name: Proyectos
-  path: proyectos.html
-  section_id: proyectos
 - name: Portfolio
   path: portfolio.html
   section_id: portfolio

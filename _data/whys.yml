@@ -1,16 +1,16 @@
 - title: Software a Medida
-  icon: flash
+  icon: svg-programmer-2
   desc:
-    Desarrollamos <b><a href="#">aplicaciones de larga duración</a></b> que perduraán y brillarán en el tiempo.
+    Desarrollamos <b><a href="#">aplicaciones de larga duración</a></b> a medida que perdurarán y brillarán en el tiempo.
 - title: Apps Móviles
-  icon: paper-plane
+  icon: svg-application
   desc:
-    Aplicaciones móviles empresariales multiplataforma (Android / iPhone) y nativas
+    Aplicaciones móviles únicas, estables y seguras para uso empresarial.
 - title: Integración
-  icon: layout
+  icon: svg-web
   desc:
-    Mediadores y buses de integración para conectar sus aplicaciones y servicios.
+    Mediadores y buses de integración para conectar datos, aplicaciones y servicios.
 - title: Consultoría
-  icon: chat
+  icon: svg-contract
   desc:
-    Consultoría Jurídica en e-Administracíon, Contratación Pública y Protección de Datos
+    Consultoría Jurídica especializada en TIC, Contratación Pública y e-Administracíon.

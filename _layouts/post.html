@@ -16,10 +16,10 @@ section_id: blog
       <a href='{{page.url}}'>{{ page.title }}</a>
     </h3>
     <p>
-      By
+      Por
       <span class='author'>{{ page.author }}</span>
       |
-      <a href='{{page.url}}#comments'>Comments 6</a>
+      <span>{{ page.date | date: "%d-%m-%Y" }}</span>
     </p>
   </div>
   <div class='content'>
@@ -27,6 +27,7 @@ section_id: blog
   </div>
 </div>
 
+<!--
 <a id='comments'></a>
 <div class='comments-wrapper'>
   <h3 class='comments-count'>6 Comments</h3>
@@ -111,3 +112,5 @@ section_id: blog
     </p>
   </form>
 </div>
+
+-->

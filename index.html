@@ -16,8 +16,8 @@ milestones:
     title: Miles de Transacciones
 
 works:
-  - image: work-1.jpg
-    title: Beautiful Girl
+  - image: tenmasmovil-1.png
+    title: Ten+ Móvil
     category: Development
   - image: work-2.jpg
     title: Look at me
@@ -35,7 +35,7 @@ works:
 {% include whys.html shape="boxed" %}
 
 
-<!-- Who we are -->
+<!-- LONG LASTING SOWTWARE -->
 
 <div class='full bg-3 light'>
   <div class='row'>
@@ -65,9 +65,9 @@ works:
 <!-- APPS MOVILES -->
 <div class='full white centered-text'>
     <div class='row'>
-      <div class='large-12 columns'>
-        <h2>Aplicaciones Móviles Empresariales</h2>
-        <p>Porque las aplicaciones móviles para uso empresarial tienen 
+      <div class='special-title centered-text'>
+        <h2 class='blue-text-2'>Aplicaciones Móviles Empresariales</h2>
+        <p class="">Porque las aplicaciones móviles para uso empresarial tienen 
           requisitos muy exigentes, diseñamos desde la app móvil hasta 
           los servidores en alta disponibilidad y una API segura.</p>
         <img class='centered' src='{{site.url}}/images/apps-show.png'>
@@ -80,8 +80,8 @@ works:
     <div class='two spacing'></div>
     <div class='row'>
       {% for milestone in page.milestones %}
-        <div class='medium-4 large-4 columns'>
-          <div class='milestone light'>
+      <div class='medium-4 large-4 columns'>
+            <div class='milestone light'>
             <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'></strong>
             <span>{{milestone.title}}</span>
           </div>
@@ -92,79 +92,14 @@ works:
   </div>
   
 <!-- Agile y Lean -->
+{% include agile-y-lean.html %}
 
-<div class='full white'>
-    <div class='row'>
-      <div class='large-6 columns'>
-        <img class='fadeinleft' src='{{site.url}}/images/patrick-perkins-350622-unsplash.jpg'>
-      </div>
-      <div class='large-6 columns'>
-        <h2 class='blue-text-2'>Agile y Lean</h2>
-        <p>
-          En AvanTIC creemos que el software, además de ser de calidad, ha de ser creado 
-          para perdurar. El software no tiene 
-          que ser algo que simplemente ofrezca una solución a un problema, algo que 
-          funcione. El software tiene que funcionar bien, durar, poder crecer y 
-          cumplir a largo plazo, no sólo ahora sino de forma continuada en el tiempo.
-          <br>
-          Nuestras aplicaciones corporativas están construidas de tal manera que 
-          perdurarán y brillarán en el tiempo, especialmente en 
-          sectores altamente demandantes de estabilidad y robustez como 
-          los sistemas críticos de negocio, la administración electrónica 
-          o la gestión pública.
-        </p>
-        <a class='button boxed-dark'>Sepa más</a>
-      </div>
-    </div>
-  </div>
-  
-
-
-<!-- Who we are -->
-
-<div class='full'>
-  <div class='row'>
-    <div class='large-6 columns'>
-      <h2 class=''>Expertos en Java de Servidor</h2>
-      <p>
-        En AvanTIC somos expertos en tecnologías Web Java Server Side. Desarrollamos
-        aplicaciones corportativas y para administración pública, en el
-        ámbito tributario, jurídico y de la tramitación electrónica.
-      </p>
-      <a class='button boxed-dark'>Sepa más</a>
-    </div>
-    <div class='large-6 columns'>
-      <img class='fadeinright' src='{{site.url}}/images/mike-kenneally-80402-unsplash.jpg'>
-    </div>
-  </div>
-</div>
+<!-- Expertos en Java -->
+{% include expertos-en-java.html %}
 
 <!-- Consultoría Jurídica -->
+{% include consultoria-juridica.html %}
 
-<div class='full white'>
-    <div class='row'>
-      <div class='large-6 columns'>
-        <img class='fadeinleft' src='{{site.url}}/images/architecture-blur-building-728486.jpg'>
-      </div>
-      <div class='large-6 columns'>
-        <h2 class='blue-text-2'>Consultoría Jurídica</h2>
-        <p>
-          En AvanTIC creemos que el software, además de ser de calidad, ha de ser creado 
-          para perdurar. El software no tiene 
-          que ser algo que simplemente ofrezca una solución a un problema, algo que 
-          funcione. El software tiene que funcionar bien, durar, poder crecer y 
-          cumplir a largo plazo, no sólo ahora sino de forma continuada en el tiempo.
-          <br>
-          Nuestras aplicaciones corporativas están construidas de tal manera que 
-          perdurarán y brillarán en el tiempo, especialmente en 
-          sectores altamente demandantes de estabilidad y robustez como 
-          los sistemas críticos de negocio, la administración electrónica 
-          o la gestión pública.
-        </p>
-        <a class='button boxed-dark'>Sepa más</a>
-      </div>
-    </div>
-  </div>
   
   <!-- Separador -->
   <div class='full yellow no-padding'>
@@ -186,7 +121,7 @@ works:
     <div class='row'>
       <div class='special-title centered-text'>
         <h2>Valores</h2>
-        <p>Lo que nos mueve y nos define</p>
+        <p>que nos mueven y nos definen</p>
       </div>
       <div class='spacing'></div>
       <div class="large-4 columns">
@@ -219,7 +154,7 @@ works:
     <div class='row'>
       <div class='special-title centered-text'>
         <h2>Projectos Destacados</h2>
-        <p>Algunos de nuestros principales proyectos</p>
+        <p>Algunos de nuestros proyectos de referencia</p>
       </div>
     </div>
     <div class='spacing'></div>

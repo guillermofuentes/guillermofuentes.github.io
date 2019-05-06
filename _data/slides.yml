@@ -3,15 +3,13 @@
   desc:
     <h2>¿Desea transformar su organización?</h2>
     <p>Porque la transformación digital es un camino que no debe recorrer sólo.</p>
-    <div class='two spacing'></div>
-    <a class='button boxed'>Purchase Now</a>
 - image: adult-blur-business-2102416.jpg
   desc_location: right
   desc:
     <h2>Desarrollo a Medida</h2>
     <p>No se conforme con las soluciones comunes</p>
     <div class='two spacing'></div>
-    <a class='button boxed'>Learn More</a>
+    <a class='button boxed'>Sepa más</a>
 - image: eugene-chystiakov-1381895-unsplash.jpg #slide-1.jpg
   desc_location: right
   desc:
@@ -19,7 +17,7 @@
     <p class="red-text">Consultoría Jurídica especializada en TIC,
     Contratación Pública y e-Administración</p>
     <div class='two spacing'></div>
-    <a class='button boxed'>Learn More</a>
+    <a class='button boxed'>Sepa más</a>
 - image: all-bong-101861-unsplash.jpg #slide-1.jpg
   desc_location: right
   desc:
@@ -27,7 +25,7 @@
     <p class="">Desarrollamos software que perdurará y brillará 
     en el tiempo de forma continuada</p>
     <div class='two spacing'></div>
-    <a class='button boxed'>Learn More</a>
+    <a class='button boxed'>Sepa más</a>
 - image: ashley-knedler-75600-unsplash.jpg #slide-2.jpg
   desc_location: right
   desc:

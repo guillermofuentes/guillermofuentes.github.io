@@ -40,6 +40,7 @@ h1, h2, h3, h4 {
 
 .blue-text-2, a.blue-text-2 {
   color: #0095B2;
+  color: #ee0b77;
 }
 .red-text {
   color: rgb(162, 30, 30);
@@ -167,6 +168,10 @@ h1, h2, h3, h4 {
   color: #eeeeee;
 }
 
+
+.bg-navbar {
+}
+
 /*special title */
 .special-title i {
   font-size: 50px;
@@ -237,11 +242,12 @@ h1, h2, h3, h4 {
   color: #d33;
   border: 8px solid #aaa;
   */
+  border: none;
 }
 
 .icon-text-boxed:hover i {
-  background: #fcbf31;
-  color: white;
+  /*background: #fcbf31;*/
+  /*color: white;*/
 }
 
 .icon-text-circle {
@@ -272,6 +278,37 @@ h1, h2, h3, h4 {
 .icon-text-circle:hover i {
   background: none;
   color: #fcbf31;
+}
+
+i.icon-svg-web {
+  background: url(../images/web.svg) center center no-repeat;
+  background-size: auto 100%;
+}
+i.icon-svg-administrator {
+  background: url(../images/administrator.svg) center center no-repeat;
+  background-size: auto 100%;
+}
+i.icon-svg-administrator-2 {
+  background: url(../images/administrator-2.svg) center center no-repeat;
+  background-size: auto 100%;
+}
+i.icon-svg-programmer {
+  background: url(../images/programmer.svg) center center no-repeat;
+  background-size: auto 100%;
+}
+i.icon-svg-programmer-2 {
+  background: url(../images/programmer-2.svg) center center no-repeat;
+  background-size: auto 100%;
+}
+
+i.icon-svg-contract {
+  background: url(../images/contract.svg) center center no-repeat;
+  background-size: auto 100%;
+}
+
+i.icon-svg-application {
+  background: url(../images/application.svg) center center no-repeat;
+  background-size: auto 100%;
 }
 
 /*call-to-action */

@@ -3,47 +3,53 @@ layout: default
 title: Portfolio
 section_id: portfolio
 categories:
-  - name: Graphic Design
-  - name: Web Design
-  - name: Brand
-  - name: Development
-  - name: Print
+  - name: Apps Empresariales
+  - name: API
+  - name: Integración
+  - name: Software Larga Duración
+  - name: Consultoría
 
 works:
-  - image: work-1.jpg
-    title: Beautiful Girl
+  - image: tenmasmovil-1.png
+    title: Ten+ Móvil
+    item: tenmas
     categories:
-      - name: Graphic Design
+      - name: Apps Empresariales
   - image: work-2.jpg
-    title: Look at me
+    title: Fred Olsen Express
+    item: fredolsen
     categories:
-      - name: Web Design
-      - name: Print
+      - name: Apps Empresariales
   - image: work-3.jpg
-    title: Am I cute
+    title: Binter Canarias
+    item: binterapp
     categories:
-      - name: Brand
+      - name: API
+      - name: Integración
   - image: work-4.jpg
-    title: Umbrella
+    title: Tenerife PIP
+    item: tenerifepip
     categories:
-      - name: Development
-  - image: work-5.jpg
-    title: Canned Bros
+      - name: Apps Empresariales
+      - name: Integración
+  - image: sclocaliza-1.png
+    title: Santa Cruz Localiza
+    item: sclocaliza
     categories:
       - name: Print
       - name: Brand
   - image: work-6.jpg
     title: Hale
     categories:
-      - name: Web Design
+      - name: API e Integración
   - image: work-7.jpg
     title: A beautiful day
     categories:
-      - name: Web Design
+      - name: API e Integración
   - image: work-8.jpg
     title: Flower book
     categories:
-      - name: Graphic Design
+      - name: Apps Empresariales
   - image: work-1.jpg
     title: Beautiful Girl
     categories:
@@ -56,7 +62,7 @@ works:
   - image: work-3.jpg
     title: Am I cute
     categories:
-      - name: Web Design
+      - name: API e Integración
   - image: work-4.jpg
     title: Umbrella
     categories:
@@ -64,7 +70,7 @@ works:
   - image: work-5.jpg
     title: Canned Bros
     categories:
-      - name: Graphic Design
+      - name: Apps Empresariales
   - image: work-6.jpg
     title: Hale
     categories:
@@ -79,8 +85,8 @@ works:
   <div class='row'>
     <div class='special-title centered-text'>
       <i class='icon-star'></i>
-      <h2>Portfolio</h2>
-      <p>Our best and featured works so far</p>
+      <h2>Proyectos</h2>
+      <p>Proyectos más significativos y destacados</p>
       <p class='shortline'></p>
     </div>
   </div>
@@ -103,7 +109,7 @@ works:
     <ul class='gallery small-block-grid-2 medium-block-grid-3 large-block-grid-3'>
       {% for work in page.works %}
         <li class='{{ work.categories | map:"name" | join:"##" | downcase | replace:' ', '-' | replace:'##', ' '}}'>
-          <a>
+          <a href='{{site.url}}/portfolio-item-{{work.item}}.html'>
             <img src='{{site.url}}/images/{{work.image}}'>
             <div class='overlay'>
               <div class='thumb-info'>

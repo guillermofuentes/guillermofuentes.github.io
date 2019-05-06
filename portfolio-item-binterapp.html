@@ -1,0 +1,67 @@
+---
+layout: default
+title: Portfolio
+section_id: portfolio
+images:
+  - "work-1-big.jpg"
+  - "work-2-big.jpg"
+  - "work-3-big.jpg"
+  - "work-4-big.jpg"
+---
+
+<div class='three spacing'></div>
+<div class='spacing'></div>
+<div class='row'>
+  <div class='large-12 columns'>
+    <ul data-orbit=''>
+      {% for image in page.images %}
+        <li>
+          <img src='{{site.url}}/images/{{image}}'>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<div class='two spacing'></div>
+
+
+<div class='row'>
+  <div class='large-8 columns'>
+        <h3>Binter Canarias App</h3>
+        <p>La aplicación móvil de Binter Canarias integra los procesos ya existentes con  nuevos servicios desarrollados, ofreciendo una potente herramienta al pasajero.
+    
+                Avantic ha desarrollado la aplicación móvil para la aerolínea Binter Canarias, que integra todos los procesos del viaje aéreo: compra de billetes, cambio de reserva, Check-in, Descarga de tarjeta de embarque, recepción de notificaciones push sobre el estado del vuelo y la consulta de puntos Binter Más. 
+            </p><p>
+                Junto con la aplicación móvil se ha desarrollado una API mediante una plataforma mediación de datos y servicios en servidor, y las plataformas de envío de mensajes push.
+            </p><p>
+                La aplicación Binter puede descargarse en sus versiones para Android e iOS.</p>
+        <div class='spacing'></div>
+        <a class='button' href='https://www.bintercanarias.com'  target='_blank'>Visitar la Web</a>
+    
+  </div>
+  <div class='large-4 columns'>
+    <ul class='info'>
+      <li>
+        <strong>Cliente:</strong>
+        Binter Canarias
+      </li>
+      <li>
+        <strong>Fecha:</strong>
+        2016
+      </li>
+      <li>
+        <div class='spacing'></div>
+        <a href='' title='previous'>
+          <i class='icon-left-open'></i>
+        </a>
+        <a href='portfolio.html' title='back to work list'>
+          <i class='icon-layout'></i>
+        </a>
+        <a href='' title='next'>
+          <i class='icon-right-open'></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class='three spacing'></div>
