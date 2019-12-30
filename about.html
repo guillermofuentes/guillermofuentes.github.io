@@ -11,12 +11,26 @@ bars:
     percent: 60
   - title: Consultoría Jurídica
     percent: 20
+    
+colaboraciones:
+  - image: marca-universidad-de-la-laguna-original.png
+    title: UNIVERSIDAD DE LA LAGUNA
+    category: Development
+  - image: ulpgc-logo.jpg
+    title: UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA
+    category: Development
+  - image: cluster-logo.jpg
+    title: CLÚSTER DE LA INGENIERÍA DE CANARIAS
+    category: Development
+  - image: istitutofp.jpg
+    title: INSTITUTOS DE FORMACIÓN PROFESIONAL
+    category: Development
 members:
   - image: member-1.png
     name: Víctor Durán
     position: Socio Fundador &amp; Director de Operaciones (COO)
     desc:
-      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
+      Ingeniero Superior en Telecomunicación (Universidad Politécnica de Madrid), Auditor Jefe de Seguridad (AENOR).
     socials:
       - name: twitter
         link: #
@@ -34,7 +48,7 @@ members:
     name: Guillermo Fuentes
     position: Socio Fundador &amp; Director de Tecnología (CTO)
     desc:
-      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
+      Ingeniero Superior en Telecomunicación (UPM), Máster en Gestión de Proyectos. Experto en Arquitectura Software y de Sistemas.
     socials:
       - name: twitter
         link: #
@@ -46,7 +60,7 @@ members:
     name: M. Eugenia Alcalde
     position: Socia Fundadora &amp; Directora Jurídica
     desc:
-      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
+      Licenciada en Derecho (U. Salamanca), Máster en Asesoría Jurídica de Empresas (INESE), Máster en Asesoría y Consultoría en Tecnologías de la Información (Davara &amp; Davara), Experta en Contratación Pública.
     socials:
       - name: twitter
         link: #
@@ -149,39 +163,66 @@ members:
 
     {% include el-equipo.html%}
 
-
-    <div class='special-title centered-text'>
-        <div class='spacing'></div>
-        <i class='icon-compass'></i>
-        <h2>Encuéntranos</h2>
-        <p class='shortline'></p>
-        <div class='spacing'></div>
-
-        <div class='centered-text'>
-                <div class='row'>
-            <iframe width="640" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;hl=es&amp;geocode=&amp;q=Avantic&amp;sll=28.463243,-16.29528&amp;sspn=0.008979,0.016522&amp;ie=UTF8&amp;t=h&amp;source=embed&amp;hq=Avantic&amp;hnear=&amp;vpsrc=6&amp;cid=15160809766213611405&amp;ll=28.467861,-16.293797&amp;spn=0.013204,0.027466&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-            </div>
+    <div class='full no-padding'>
+      <div class='three spacing'></div>
+      <div class='row'>
+        <div class='special-title centered-text'>
+          <h2 class='blue-text-2'>Colaboraciones</h2>
+          <p>Entidades y organizaciones con las que trabajamos</p>
         </div>
-    </div>
-
-  <div class='three spacing'></div>
-  <div class='three spacing'></div>
+      </div>
+      <div class='spacing'></div>
+  </div>
+    
+  <ul class='gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4'>
+    {% for colaboracion in page.colaboraciones %}
+      <li>
+        <a>
+          <img src='{{colaboracion.url}}/images/{{ colaboracion.image }}'>
+          <div class='overlay'>
+            <div class='thumb-info'>
+              <h3>{{ colaboracion.title }}</h3>
+              <p>{{ colaboracion.description }}</p>
+            </div>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class='two spacing'></div>
   </div>
 </div>
 
 
-<h2>Créditos</h2>
-
-<div>Icons made by <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
 <!--Fondo: 17213
 <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by starline - www.freepik.com</a>
 -->
 
-{% include get-in-touch.html %}
+
+<div class='full yellow'>
+  <div class='special-title centered-text'>
+      <i class='icon-compass'></i>
+      <h2>Contacta con nosotros</h2>
+      <p class='light'>Estaremos encantados de hablar de sus proyectos.</p>
+  </div>
+    <div class='row'>
+      <div class='large-6 columns centered-text'>
+    
+        <iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;hl=es&amp;geocode=&amp;q=Avantic&amp;sll=28.463243,-16.29528&amp;sspn=0.008979,0.016522&amp;ie=UTF8&amp;t=h&amp;source=embed&amp;hq=Avantic&amp;hnear=&amp;vpsrc=6&amp;cid=15160809766213611405&amp;ll=28.467861,-16.293797&amp;spn=0.013204,0.027466&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+      </div>
+      <div class='light'>
+          <p>
+            AVANTIC ESTUDIO DE INGENIEROS S.L.<br>
+            C/ Rufino, nº 1, Primera Planta<br>
+            38320 San Cristóbal de La Laguna - Santa Cruz de Tenerife<br>
+            Teléfono: 922 64 10 51 Fax: 922 65 34 51 <br>
+            email: avantic@avantic.net<br>
+          </p>
+        </div>
+    </div>
+
+</div>
+
+
 
